@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diseño Responsivo con Dos Columnas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .columna {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      border: 2px solid #2980b9;
+      border-radius: 8px;
+      box-sizing: border-box;
+      flex: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .columna {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center; padding-top:20px;">Diseño Responsivo con Dos Columnas</h2>
+
+  <div class="contenedor">
+    <div class="columna">Columna 1: contenido de ejemplo</div>
+    <div class="columna">Columna 2: contenido de ejemplo</div>
+  </div>
+
+</body>
+</html>
